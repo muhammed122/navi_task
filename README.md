@@ -1,6 +1,12 @@
 # navi_task
 
-A new Flutter application.
+<h3>Description</h3>
+<h5> A project has two static locations current and destination ,
+  it also has dynamic part which can get the current user location if user allowed 
+  and in this case the origin will be the current location of user ,
+  then can choose what type of vehicle he want and confirm the trib
+</h5>
+
 
 ## Getting Started
 
