@@ -12,7 +12,7 @@ import 'package:provider/provider.dart';
 
 class MapScreen extends StatefulWidget {
   static CameraPosition _kGooglePlex = CameraPosition(
-    target:  LatLng(30.044331, 31.242184),
+    target: LatLng(30.044331, 31.242184),
     zoom: 14.4746,
   );
 
@@ -53,6 +53,10 @@ class _MapScreenState extends State<MapScreen> {
     setState(() {
       addWayData();
     });
+    var cameraPosition =
+        CameraPosition(target: staticCurrentLocation, zoom: 11);
+    myGoogleMapController
+        .animateCamera(CameraUpdate.newCameraPosition(cameraPosition));
   }
 
   addWayData() async {
@@ -70,15 +74,19 @@ class _MapScreenState extends State<MapScreen> {
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text('Add pick Up')));
     } else {
-      Provider.of<VehicleProvider>(context,listen: false).getVehicles();
+      Provider.of<VehicleProvider>(context, listen: false).getVehicles();
     }
   }
 
   List<Marker> markers = [
     Marker(
       markerId: MarkerId("Me"),
-      position:  LatLng(30.044331, 31.242184),
+      position: LatLng(30.044331, 31.242184),
     ),
+    Marker(
+        markerId: MarkerId("dest"),
+        position: LatLng(29.996900, 30.968758),
+        icon: BitmapDescriptor.defaultMarker),
   ];
 
   @override
@@ -101,7 +109,7 @@ class _MapScreenState extends State<MapScreen> {
                       myGoogleMapController = googleController;
                     });
 
-                    //  addUserOnMap();
+                    addUserOnMap();
                   }),
               FromToWidget(
                 fromTextController: fromTextController,
