@@ -1,10 +1,10 @@
 # navi_task
 
 <h2>Description</h2>
-<h5> A project has two static locations current and destination ,
-  it also has dynamic part which can get the current user location if user allowed 
-  and in this case the origin will be the current location of user ,
-  then can choose what type of vehicle he want and confirm the trib
+<h5> Navi project: The application gives the user a variety of uses in 2 modes.
+First: The user can enter a static point to start and a static destination.
+Second: The user allows the application to get his/her current location from Google Maps.
+The application also has a variety of cars type and the user can select the type that he/she wants then confirm the trip.
 </h5>
 
 
