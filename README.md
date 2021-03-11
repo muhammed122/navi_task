@@ -22,3 +22,7 @@ geocoder - convert the coordinates to text address
 http - A type-safe HTTP client for flutter.
 <br>
 
+<h2>Screen shots </h2>
+<img src="https://user-images.githubusercontent.com/44608739/110755845-17040280-8252-11eb-908f-bdac9968a55c.png" width="200" height="400"/>
+<img src="https://user-images.githubusercontent.com/44608739/110755828-123f4e80-8252-11eb-9c23-8058f1d9eb7a.png" width="200" height="400"/>
+<img src="https://user-images.githubusercontent.com/44608739/110755842-153a3f00-8252-11eb-9fbf-793aece7e77b.png" width="200" height="400"/>
